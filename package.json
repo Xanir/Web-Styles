@@ -1,0 +1,27 @@
+{
+	"name": "WebStyles",
+	"description": "Improved and Standardize Web Experience and Through CSS ",
+	"version": "0.0.1",
+	"homepage": "https://github.com/Enzey/Web-Styles",
+	"bugs": "https://github.com/Enzey/Web-Styles/issues",
+	"author": {
+		"name": "Enzey",
+		"email": "enzey@enzey.net",
+		"url": "https://github.com/Xanir"
+	},
+	"scripts": {
+		"build": "node ./build/less.js"
+	},
+	"keywords": [
+		"angular"
+	],
+	"dependencies": {
+	},
+	"devDependencies": {
+		"less": "2.5.x"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/Enzey/Web-Styles.git"
+	}
+}
