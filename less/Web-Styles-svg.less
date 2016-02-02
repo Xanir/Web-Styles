@@ -1,0 +1,23 @@
+@import "base/base.less";
+
+
+input[type="checkbox"] {
+	&::before {
+		content: "";
+        background-size: 100%;
+        background-image: url(svgs/unchecked.svg);
+	}
+	&:checked::before {
+        background-image: url(svgs/checkbox-checked.svg);
+	}
+
+	&::after {
+		content: "";
+	}
+	
+	&:checked::after {
+	}
+
+}
+
+@checkbox-shrink: 0%;

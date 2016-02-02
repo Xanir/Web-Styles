@@ -1,0 +1,26 @@
+@import "base/base.less";
+
+@checkbox-border-color: #111111;
+@checkbox-check-character-code: "\2714";
+
+input[type="checkbox"] {
+	&::before {
+		content: "";
+	    box-shadow: inset 0px 0px 0px 1px @checkbox-border-color;
+		border-radius: 20%;
+	}
+
+	&::after {
+		content: "";
+		font-size: (100% - @checkbox-shrink) * 0.8;
+
+		color: blue;
+	}
+	
+	&:checked::after {
+		content: @checkbox-check-character-code;
+	}
+
+}
+
+@checkbox-shrink: 16%;

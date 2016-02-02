@@ -1,7 +1,5 @@
 
 @checkbox-shrink: 16%;
-@checkbox-border-color: #111111;
-@checkbox-check-character-code: "\2714";
 
 input[type="checkbox"] {
 	display: inline-block;
@@ -14,30 +12,19 @@ input[type="checkbox"] {
 	width: 1em;
     vertical-align: text-bottom;
 
-	&::before {
-		content: "";
+    &::before,
+	&::after {
 		position: absolute;
 		transform: scale(1000);
-	    box-shadow: inset 0px 0px 0px 1px @checkbox-border-color;
-		border-radius: 20%;
+	}
+
+	&::before {
 		top: @checkbox-shrink;
 		bottom: @checkbox-shrink;
 		left: @checkbox-shrink;
 		right: @checkbox-shrink;
 	}
 
-	&::after {
-		content: "";
-		position: absolute;
-		transform: scale(1000);
-		font-size: (100% - @checkbox-shrink) * 0.8;
-
-		color: blue;
-	}
-	
-	&:checked::after {
-		content: @checkbox-check-character-code;
-	}
 
 	&:focus::before {
 		outline: inherit;
