@@ -1,11 +1,13 @@
 <?xml version="1.0" standalone="no"?>
 <svg xmlns="http://www.w3.org/2000/svg" version="1.1"
-     width="200px" height="200px">
+     width="200px" height="200px"
+	 shape-rendering="geometricPrecision">
 
 	<style>
 		.outer, .inner {
-			stroke-width: 14;
+			stroke-width: 15;
 			stroke-opacity: 1;
+			stroke-antialiasing: true;
 		}
 		.outer {
 			fill: none;
@@ -16,8 +18,8 @@
 		}
 	</style>
 
-    <circle class="outer" cx="100" cy="100" r="89" />
+    <circle class="outer" cx="100" cy="100" r="85" />
 
-    <circle class="inner" cx="100" cy="100" r="55" />
+    <circle class="inner" cx="100" cy="100" r="50" />
 
 </svg>
