@@ -1,0 +1,21 @@
+<?xml version="1.0" standalone="no"?>
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1"
+     width="200px" height="200px">
+
+	<style>
+		.outer, .inner {
+			stroke-width: 14;
+			stroke-opacity: 1;
+		}
+		.outer {
+			fill: none;
+			stroke: black;
+		}
+		.inner {
+			fill: black;
+		}
+	</style>
+
+    <circle class="outer" cx="100" cy="100" r="89" />
+
+</svg>

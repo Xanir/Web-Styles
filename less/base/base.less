@@ -1,7 +1,8 @@
 
 @checkbox-shrink: 16%;
 
-input[type="checkbox"] {
+input[type="checkbox"],
+input[type="radio"] {
 	display: inline-block;
 	position: relative;
     transform: scale(0.001);
@@ -19,17 +20,18 @@ input[type="checkbox"] {
 	}
 
 	&::before {
-		top: @checkbox-shrink;
-		bottom: @checkbox-shrink;
-		left: @checkbox-shrink;
-		right: @checkbox-shrink;
+		top:    @checkbox-shrink * 0.5;
+		bottom: @checkbox-shrink * 0.5;
+		left:   @checkbox-shrink * 0.5;
+		right:  @checkbox-shrink * 0.5;
 	}
 
 
 	&:focus::before {
 		outline: inherit;
+		outline-color: inherit;
+		outline-style: auto;
 		outline-width: inherit;
-		outline-style: inherit;
 	}
 
 }

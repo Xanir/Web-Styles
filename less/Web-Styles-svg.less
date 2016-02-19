@@ -1,23 +1,30 @@
 @import "base/base.less";
 
-
-input[type="checkbox"] {
+input[type="checkbox"],
+input[type="radio"] {
 	&::before {
 		content: "";
         background-size: 100%;
+		background-repeat: no-repeat;
+	}
+}
+
+input[type="checkbox"] {
+	&::before {
         background-image: url(svgs/checkbox-unchecked.svg);
 	}
 	&:checked::before {
-        background-image: url(svgs/checkbox-checked-ok.svg);
+        background-image: url(svgs/checkbox-checked.svg);
 	}
-
-	&::after {
-		content: "";
-	}
-	
-	&:checked::after {
-	}
-
 }
 
-@checkbox-shrink: 0%;
+input[type="radio"] {
+	&::before {
+        background-image: url(svgs/radio-button-off.svg);
+	}
+	&:checked::before {
+        background-image: url(svgs/radio-button-on.svg);
+	}
+}
+
+@checkbox-shrink: 12%;
